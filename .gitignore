@@ -1,0 +1,26 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.csproj.user
+
+# Build output
+bin/
+obj/
+
+# NuGet
+**/project.assets.json
+**/project.nuget.cache
+**/*.nuget.dgspec.json
+**/*.nuget.g.props
+**/*.nuget.g.targets
+
+# Generated
+**/GlobalUsings.g.cs
+**/*AssemblyInfo.cs
+**/*Inputs.cache
+**/*.cache
+
+# App settings (secrets)
+appsettings.Development.json
+**/appsettings.Development.json
