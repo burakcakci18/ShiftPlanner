@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Common.SharedConfiguration\Common.SharedConfiguration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="MultiLanguage\Resources\ErrorResource.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

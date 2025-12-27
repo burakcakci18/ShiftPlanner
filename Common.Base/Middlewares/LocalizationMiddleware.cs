@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Common.SharedConfiguration;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -12,7 +13,7 @@ namespace Common.Base.Middlewares
     public class LocalizationMiddleware
     {
         private readonly RequestDelegate _requestDelegate;
-        private readonly string DefaultLanguage = "null"/*SharedConfigurationLoader.GetCode("DefaultLanguage") ?? "en"*/;
+        private readonly string DefaultLanguage = SharedConfigurationLoader.GetCode("DefaultLanguage") ?? "en";
         private static readonly HashSet<string> SupportedLanguages = new(StringComparer.OrdinalIgnoreCase)
         {
            "en", "tr"
