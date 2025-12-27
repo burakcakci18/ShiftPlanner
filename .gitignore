@@ -1,26 +1,81 @@
-# Visual Studio
+# =========================
+# Visual Studio & IDEs
+# =========================
 .vs/
+.vscode/
+.idea/
 *.user
 *.suo
+*.opensdf
+*.sdf
 *.csproj.user
+*.sln.docstates
 
-# Build output
-bin/
-obj/
+# =========================
+# Build Output (Case Insensitive)
+# =========================
+[Bb]in/
+[Oo]bj/
+runtimes/
 
-# NuGet
+# =========================
+# NuGet & Dependencies
+# =========================
+packages/
 **/project.assets.json
 **/project.nuget.cache
 **/*.nuget.dgspec.json
 **/*.nuget.g.props
 **/*.nuget.g.targets
 
-# Generated
+# =========================
+# Generated Files
+# =========================
 **/GlobalUsings.g.cs
 **/*AssemblyInfo.cs
 **/*Inputs.cache
 **/*.cache
+Generated/
 
-# App settings (secrets)
+# =========================
+# App Settings & Secrets (Önemli)
+# =========================
+# Development ve Local ayarlar sunucuya gitmemeli
 appsettings.Development.json
-**/appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+*.local.json
+
+# Environment dosyaları 
+.env
+.env.*
+
+# =========================
+# Visual Studio HTTP Client
+# =========================
+# Resimde gördüğüm "ShiftPlanner.API.http" dosyası kalabilir, 
+# ancak içindeki tokenları tutan private dosyalar gizlenmeli.
+http-client.env.json
+http-client.private.env.json
+
+# =========================
+# Test Results & Coverage
+# =========================
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# =========================
+# OS Generated (Gereksiz dosyalar)
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# =========================
+# Publish
+# =========================
+*.publishsettings
+pub/
+publish/
